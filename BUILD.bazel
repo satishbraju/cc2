@@ -20,6 +20,9 @@ cc_library(
   srcs = ["src/Foo.cpp"],
   hdrs = ["inc/Foo.hpp"],
 )
+
+load("@rules_python//python:defs.bzl","py_library")
+
 py_library(
 name = 'Pyhello',
 srcs = ['src/app.py'],
