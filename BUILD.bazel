@@ -20,3 +20,7 @@ cc_library(
   srcs = ["src/Foo.cpp"],
   hdrs = ["inc/Foo.hpp"],
 )
+py_library(
+name = 'Pyhello',
+srcs = ['src/app.py'],
+)
