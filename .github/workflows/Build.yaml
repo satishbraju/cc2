@@ -25,6 +25,9 @@ jobs:
       - name: Check work folder
         run: pwd
 
+      - name: List files
+        run: ls -lrt 
+
       - name: Build
         run: bazel build //...
 
