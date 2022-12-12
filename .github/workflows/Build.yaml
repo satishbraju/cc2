@@ -29,7 +29,7 @@ jobs:
         run: ls -lrt 
 
       - name: Build
-        run: bazel build //...
+        run: bazel build //... --remote_executor=grpcs://remote.buildbuddy.io
 
       - name: Create work directory
         run: mkdir Build
